@@ -24,7 +24,6 @@ The output is Counter which is 4 bit in size.
 
 	You have to apply high value to reset, to reset the Counter output.
  
-![image](https://github.com/user-attachments/assets/efe1095e-989e-4005-b53b-e9dc50d4025c)
 
 ## Fig 1: 4 Bit Up/Down Counter
 
@@ -42,6 +41,7 @@ Functional Simulation:
       
 	After this you can see the window like below 
 
+![Screenshot (95)](https://github.com/user-attachments/assets/ded3f4af-68f4-4bb8-ba94-77b27a065038)
 
 ## Fig 2: Invoke the Cadence Environment
 
@@ -59,8 +59,8 @@ Functional Simulation:
 */Program  for  4-Bit Up-Down Counter
 
 	Use Save option or Ctrl+S to save the code or click on the save option from the top most right corner and close the text file.
-![Screenshot 2024-10-03 163749](https://github.com/user-attachments/assets/c72ab652-05cd-4f66-99ba-434834e2be9f)
 
+![Screenshot (96)](https://github.com/user-attachments/assets/e2c94b3c-6567-484b-a490-88a02612c5f4)
 
 ## Creating Test bench:
 
@@ -77,13 +77,13 @@ Functional Simulation:
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple step
 
+
 ## Fig 3: Setting Multi-step simulation
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure
 
 Click the cds.lib file and save the file by clicking on Save option
-![Screenshot 2024-10-04 160147](https://github.com/user-attachments/assets/0b7df53a-5e16-45c5-b2a8-df39ac285f37)
-
+![Screenshot (96)](https://github.com/user-attachments/assets/3411beca-4863-485c-a355-40040b297270)
 
 
 ## Fig 4: cds.lib file Creation
@@ -93,7 +93,7 @@ Click the cds.lib file and save the file by clicking on Save option
 	Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure
 
 	We are simulating verilog design without using any libraries
-![Screenshot 2024-10-03 163824](https://github.com/user-attachments/assets/d2c16cdd-bd0b-451a-8630-79b2aadf3ec6)
+![Screenshot (97)](https://github.com/user-attachments/assets/dcd38120-3ee7-4934-84a1-2ae4de1e0dce)
 
 
 ## Fig 5: Selection of Don’t include any libraries
@@ -105,12 +105,13 @@ Click the cds.lib file and save the file by clicking on Save option
 	Left side you can see the HDL files. Right side of the window has worklib and snapshots directories listed.
 
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
-![image](https://github.com/user-attachments/assets/65d4db5f-46ab-4036-9980-45707124b914)
 
+![WhatsApp Image 2024-11-14 at 13 29 12_7de32817](https://github.com/user-attachments/assets/074112fd-2932-4bba-b667-f80ea1a6d0be)
 
 ## Fig 6: Nclaunch Window
 
 To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation.
+
 ![Screenshot 2024-10-03 150511](https://github.com/user-attachments/assets/17bd6d07-be58-4c48-94f0-6d3975a553e4)
 
 
@@ -142,8 +143,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 
 	The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located.
 It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
-![Screenshot 2024-10-03 150618](https://github.com/user-attachments/assets/9088a5e4-cb78-4775-b120-b1e93933771d)
-
+![Screenshot (99)](https://github.com/user-attachments/assets/ce0fbfac-7a34-41e4-94db-dd3ea0688d04)
 
 ## Step 2: Elaboration:– To check the port connections in hierarchical design 
 
@@ -166,7 +166,8 @@ It contains statements that map logical library names to their physical director
 	After elaboration the file will come under snapshot. Select the test bench and simulate it. 
 
 ## Fig 8: Elaboration Launch Option
-![Screenshot 2024-10-03 163920](https://github.com/user-attachments/assets/fd0558d8-b940-4cc1-9c12-2515ee597e6b)
+
+![Screenshot (100)](https://github.com/user-attachments/assets/4c066519-f6ce-49d6-be76-3a290d920a24)
 
 
 ### Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
